@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.PgOneERP" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.PgOneERP" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -11,6 +11,17 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="SplashScreen" parent="Theme.PgOneERP">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/bgColor</item>
+        <item name="android:background">@color/bgColor</item>
+        <item name="colorPrimary">@color/bgColor</item>
+        <item name="colorAccent">@color/bgColor</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/bgColor</item>
+        <item name="android:windowBackground">@color/bgColor</item>
+        <item name="android:screenOrientation">userPortrait</item>
     </style>
 </resources>
