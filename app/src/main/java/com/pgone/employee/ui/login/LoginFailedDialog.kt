@@ -8,6 +8,6 @@ class LoginFailedDialog(context: Context?) : BaseDialog(context) {
   override fun onCreateDialog() {
     super.onCreateDialog()
     setContentView(R.layout.dialog_login_failed)
-    setCanceledOnTouchOutside(false)
+    setCanceledOnTouchOutside(true)
   }
 }

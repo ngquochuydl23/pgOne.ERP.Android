@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_border_4"
+    style="@style/DialogStyle">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Đăng nhập thất bại"
+        android:fontFamily="@font/bevietnampro_bold"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/errorDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="20dp"
+        android:lineHeight="24dp"
+        android:text="Email hoặc mật khẩu của bạn không đúng. Vui lòng thử lại."
+        android:textColor="@color/textColorPrimary"
+        android:textSize="13sp"
+        android:fontFamily="@font/bevietnampro_regular"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:fontFamily="@font/bevietnampro_regular"
+        android:text="OK"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/buttonColorPrimary"
+        android:textSize="16sp" />
+</LinearLayout>

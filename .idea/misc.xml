@@ -5,10 +5,20 @@
       <map>
         <entry key="..\:/Users/VuHoangUyenNhi/Desktop/pgOne.ERP.Android/app/src/main/res/layout/activity_login.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/VuHoangUyenNhi/Desktop/pgOne.ERP.Android/app/src/main/res/layout/dialog_login_failed.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/drawable/drawable_border_4.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/drawable_cursor.xml" value="0.1785" />
+        <entry key="app/src/main/res/drawable/drawable_white_loading.xml" value="0.325" />
+        <entry key="app/src/main/res/drawable/ic_back_navigation.xml" value="0.325" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1905" />
+        <entry key="app/src/main/res/font/font_family.xml" value="0.3527777777777778" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.34010416666666665" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.16540020263424518" />
+        <entry key="app/src/main/res/layout/dialog_login_failed.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

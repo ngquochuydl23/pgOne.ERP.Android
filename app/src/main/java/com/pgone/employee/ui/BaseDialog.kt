@@ -15,13 +15,13 @@ open class BaseDialog(context: Context?) {
 
   init {
     dialog = MaterialDialog(context!!)
-    dialog?.cornerRadius(4F)
+    dialog?.cornerRadius(4f)
     onCreateDialog()
   }
 
 
   fun setContentView(@LayoutRes layout: Int) {
-    dialog?.customView(layout,dialogWrapContent = true,noVerticalPadding = true)
+    dialog?.customView(layout, dialogWrapContent = true, noVerticalPadding = true)
     this.contentView = dialog?.getCustomView()
   }
 

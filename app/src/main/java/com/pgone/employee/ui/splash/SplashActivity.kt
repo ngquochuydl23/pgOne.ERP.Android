@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import com.pgone.employee.R
+import com.pgone.employee.sharedreferences.SaveTokenSharedPreferences
 import com.pgone.employee.ui.BaseActivity
+import com.pgone.employee.ui.login.LoginActivity
 
 class SplashActivity : BaseActivity() {
   private val DELAY_MILLIS : Long = 2500
@@ -30,16 +32,17 @@ class SplashActivity : BaseActivity() {
   }
 
   private val delayInMinutes = Runnable{
-    val token = ""
+    val token = SaveTokenSharedPreferences(this).getData()
     if(token.isNullOrEmpty())
       navigateToWelcome()
     else navigateToMain()
+    navigateToMain()
   }
 
   private fun navigateToMain(){
-//    val intent = Intent(this, Homescreen::class.java)
-//    startActivity(intent)
-//    finish()
+    val intent = Intent(this, LoginActivity::class.java)
+    startActivity(intent)
+    finish()
   }
 
   private fun navigateToWelcome(){

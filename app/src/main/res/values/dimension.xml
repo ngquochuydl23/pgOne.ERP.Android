@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="borderRadiusLarge">4dp</dimen>
+
+    <dimen name="borderDialog">@dimen/borderRadiusLarge</dimen>
+    <dimen name="borderMarginHorizontal">15dp</dimen>
+    <dimen name="borderPaddingVertical">20dp</dimen>
+
+    <!--     Primary Button Dimension       -->
+    <dimen name="primaryButtonLargeHeight">52dp</dimen>
+    <dimen name="primaryButtonTextSize">12sp</dimen>
+    <dimen name="primaryButtonPaddingVertical">15dp</dimen>
+
+    <!--    User Text Input       -->
+    <dimen name="userTextInputSize">14sp</dimen>
+    <dimen name="userTextInputMarginHorizontal">20dp</dimen>
+    <dimen name="userTextInputHeight">52dp</dimen>
+    <dimen name="userTextInputPaddingStart">15dp</dimen>
+
+    <!--    Large Header Title      -->
+    <dimen name="largeHeaderTextSize">30sp</dimen>
+    <dimen name="largeHeaderTextMarginHorizontal">20dp</dimen>
+
+    <!--    Checkbox padding      -->
+    <dimen name="checkboxPaddingStart">-7dp</dimen>
+</resources>
