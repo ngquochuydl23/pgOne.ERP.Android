@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class BaseAdapter<T : RecyclerView.ViewHolder?> : RecyclerView.Adapter<T>() {
+abstract class BaseRVAdapter<T : RecyclerView.ViewHolder?> : RecyclerView.Adapter<T>() {
 
   lateinit var context: Context
   val EmptyList: Int = 0

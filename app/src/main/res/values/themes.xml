@@ -1,16 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Theme.PgOneERP" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Primary brand color. -->
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <item name="android:windowActivityTransitions">true</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/bgColor</item>
-        <item name="android:background">@color/bgColor</item>
+        <item name="android:statusBarColor">@color/bgColor</item>
         <item name="colorPrimary">@color/purple</item>
         <item name="colorAccent">@color/purple</item>
         <item name="android:windowLightStatusBar">true</item>
@@ -25,7 +21,7 @@
     </style>
 
     <style name="DialogStyle">
-        <item name="background">@drawable/drawable_border_4</item>
+        <item name="background">@drawable/drawable_acc_input</item>
         <item name="backgroundTint">@color/bgColor</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_marginHorizontal">@dimen/borderMarginHorizontal</item>
@@ -34,7 +30,7 @@
 
     <style name="ButtonPrimaryStyleLarge">
         <item name="android:padding">0dp</item>
-        <item name="background">@drawable/drawable_border_4</item>
+        <item name="background">@drawable/drawable_acc_input</item>
         <item name="backgroundTint">@color/buttonColorPrimary</item>
         <item name="android:height">@dimen/primaryButtonLargeHeight</item>
         <item name="android:textColor">@color/onPrimaryColor</item>
@@ -44,22 +40,9 @@
         <item name="android:layout_marginHorizontal">@dimen/primaryButtonPaddingVertical</item>
     </style>
 
-    <style name="UserTextInput">
-        <item name="android:textColor">@color/textColorPrimary</item>
-        <item name="android:textSize">@dimen/userTextInputSize</item>
-        <item name="fontFamily">@font/bevietnampro_regular</item>
-        <item name="android:layout_marginHorizontal">@dimen/userTextInputMarginHorizontal</item>
-        <item name="android:background">@drawable/drawable_border_4</item>
-        <item name="android:backgroundTint">@color/whitesmoke</item>
-        <item name="android:layout_height">@dimen/userTextInputHeight</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:maxLines">1</item>
-        <item name="hintTextColor">@color/gray8C</item>
-        <item name="android:paddingStart">@dimen/userTextInputPaddingStart</item>
-    </style>
-
     <style name="LargeHeaderTitle">
-        <item name="fontFamily">@font/bevietnampro_bold</item>
+        <item name="fontFamily">@font/averta_std_bold</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:fontWeight">700</item>
         <item name="android:textSize">@dimen/largeHeaderTextSize</item>
         <item name="android:textColor">@color/textColorPrimary</item>
@@ -71,11 +54,33 @@
     </style>
 
     <style name="BottomSheetStyle" parent="@style/Widget.Design.BottomSheet.Modal">
-        <item name="android:background">@drawable/drawable_border_4</item>
+        <item name="android:background">@drawable/drawable_acc_input</item>
     </style>
 
     <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
         <item name="android:windowIsFloating">true</item>
         <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="AccountInputField">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">@dimen/accountInputFieldTextSize</item>
+        <item name="fontFamily">@font/bevietnampro_regular</item>
+        <item name="android:background">@drawable/drawable_acc_input</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="hintTextColor">@color/gray8C</item>
+        <item name="android:paddingHorizontal">@dimen/accountInputFieldPaddingHorizontal</item>
+    </style>
+
+    <style name="AccountInputFieldError">
+        <item name="android:textColor">@color/textColorError</item>
+        <item name="android:layout_marginTop">@dimen/accountInputErrorMarginTop</item>
+        <item name="fontFamily">@font/regular_font</item>
+        <item name="android:textSize">@dimen/accountInputErrorTextSize</item>
+    </style>
+
+    <style name="AccountInputFieldWrap">
+        <item name="android:layout_marginHorizontal">@dimen/accountInputFieldMHorizontal</item>
     </style>
 </resources>

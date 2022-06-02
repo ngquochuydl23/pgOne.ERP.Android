@@ -1,13 +1,11 @@
 package com.pgone.employee.repositories.Account
 
-import com.pgone.employee.models.AuthenticateDto
-import com.pgone.employee.models.AuthenticateResponseDto
+import com.pgone.employee.models.RequestLoginDto
 import com.pgone.employee.models.ResponseBodyDto
 import io.reactivex.rxjava3.core.Observable
-import retrofit2.http.Body
-import retrofit2.http.POST
-
+import retrofit2.http.*
+import com.pgone.employee.models.ResponseAccountDto
 interface IAccount {
-    @POST("services/app/Account/Register")
-    fun Authenticate(@Body authDataInput: AuthenticateDto?): Observable<ResponseBodyDto<AuthenticateResponseDto>>
+    @POST("account/Login")
+    fun Login(@Body request: RequestLoginDto): Observable<ResponseBodyDto<ResponseAccountDto>>
 }

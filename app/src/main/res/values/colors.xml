@@ -11,11 +11,18 @@
     <color name="whitesmoke">#f5f5f5</color>
     <color name="gray69">#696969</color>
     <color name="gray8C">#8C97B4</color>
+    <color name="red">#FF7070</color>
 
     <color name="bgColor">@color/white</color>
+    <color name="errorColor">@color/red</color>
     <color name="textColorPrimary">@color/black</color>
+    <color name="textColorError">@color/errorColor</color>
     <color name="textColorSub">@color/gray69</color>
     <color name="buttonColorPrimary">@color/purple</color>
     <color name="onPrimaryColor">@color/white</color>
     <color name="hintTextColor">@color/gray8C</color>
+
+    <color name="bgAccountField">@color/whitesmoke</color>
+    <color name="borderAccountFieldFocus">@color/purple</color>
+    <color name="borderAccountFieldError">@color/errorColor</color>
 </resources>

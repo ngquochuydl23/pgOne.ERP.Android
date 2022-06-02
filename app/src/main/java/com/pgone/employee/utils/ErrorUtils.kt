@@ -34,7 +34,7 @@ class ErrorUtils<T> {
     return null
   }
 
-  fun parseError(retrofit : Retrofit? ,throwable : Throwable) : String? {
+  fun parseErrorMessage(retrofit : Retrofit? ,throwable : Throwable) : String? {
     val errorBody = parseErrorBody(retrofit, throwable)
     Log.i("ERROR", "ERROR: " + errorBody?.message)
     return errorBody?.message

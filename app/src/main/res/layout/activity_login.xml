@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.login.LoginActivity">
-
-    <data>
-        <import type="android.view.View"/>
-        <variable
-            name="isLoading"
-            type="java.lang.Boolean"/>
-    </data>
-
     <LinearLayout
-        tools:viewBindingIgnore="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:viewBindingIgnore="true">
 
         <androidx.appcompat.widget.Toolbar
             style="@style/Toolbar"
@@ -28,18 +21,26 @@
             android:layout_height="wrap_content"
             android:text="Đăng nhập" />
 
-        <EditText
-            style="@style/UserTextInput"
+        <com.pgone.employee.component.AccountInputField
+            android:id="@+id/enterEmail"
+            style="@style/AccountInputFieldWrap"
             android:layout_width="match_parent"
-            android:layout_marginTop="35dp"
-            android:hint="Nhập email công ty" />
-
-        <EditText
-            style="@style/UserTextInput"
-            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:hint="Nhập mật "
-            android:inputType="textPassword" />
+            app:hintField="Nhập email công ty" />
+
+        w<com.pgone.employee.component.AccountInputField
+            android:id="@+id/enterPassword"
+            style="@style/AccountInputFieldWrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:hintField="Nhập mật khẩu"
+            app:inputTypeField="textPassword"
+            app:rightIconType="toggle"
+            app:rightIconToggleOn="@drawable/ic_show_password"
+            app:rightIconToggleOff="@drawable/ic_hide_password"
+            app:visibleRightIcon="true" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -50,28 +51,28 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginStart="@dimen/checkboxPaddingStart"
                 android:fontFamily="@font/bevietnampro_regular"
-                app:layout_constraintStart_toStartOf="parent"
                 android:text="Nhớ thông tin đăng nhập"
                 android:textColor="@color/textColorSub"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/forgotPasswordButton"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/bevietnampro_regular"
                 android:layout_gravity="end"
+                android:fontFamily="@font/bevietnampro_regular"
                 android:gravity="center_vertical"
                 android:text="Quên mật khẩu?"
                 android:textColor="@color/textColorSub"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -80,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/primaryButtonLargeHeight"
             android:layout_marginTop="20dp"
-            android:background="@drawable/drawable_border_4"
+            android:background="@drawable/drawable_acc_input"
             android:backgroundTint="@color/buttonColorPrimary">
 
             <TextView
@@ -89,21 +90,9 @@
                 android:background="@color/buttonColorPrimary"
                 android:fontFamily="@font/bevietnampro_regular"
                 android:text="ĐĂNG NHẬP"
-                android:visibility="@{isLoading ? View.GONE : View.VISIBLE}"
                 android:textAllCaps="true"
                 android:textColor="@color/onPrimaryColor"
                 android:textSize="@dimen/primaryButtonTextSize"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ProgressBar
-                android:layout_width="40dp"
-                android:visibility="@{isLoading ? View.VISIBLE : View.GONE}"
-                android:layout_height="40dp"
-                android:background="@color/purple"
-                android:indeterminateDrawable="@drawable/drawable_white_loading"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

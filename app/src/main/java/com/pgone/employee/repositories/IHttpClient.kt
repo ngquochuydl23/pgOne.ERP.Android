@@ -10,7 +10,7 @@ interface IHttpClient {
         get() = OkHttpClient.Builder()
 
     val retrofit: Retrofit
-        get() = retrofitBuilder("http://103.53.228.214:21345/api/")
+        get() = retrofitBuilder("https://www.pgonevn.com/api/")
 
     private fun retrofitBuilder(baseUrl: String): Retrofit {
         return Retrofit.Builder()

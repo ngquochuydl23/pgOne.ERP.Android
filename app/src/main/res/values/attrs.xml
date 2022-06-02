@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AccountInputField">
+
+        <attr name="textField" format="string"/>
+        <attr name="hintField" format="string" />
+        <attr name="errorText" format="string" />
+
+        <!-- Border-->
+        <attr name="borderColor" format="color" />
+        <attr name="borderColorFocus" format="color" />
+        <attr name="borderColorError" format="color" />
+
+        <!-- Editable-->
+        <attr name="editableField" format="boolean" />
+
+        <!-- InputType-->
+        <attr name="inputTypeField">
+            <flag name="textEmailAddress" value="0x00000021" />
+            <flag name="text" value="0x00000001" />
+            <flag name="textPassword" value="0x00000081" />
+            <flag name="phone" value="0x00000003" />
+            <flag name="date" value="0x00000014" />
+        </attr>
+
+        <!-- Icon-->
+        <attr name="visibleRightIcon" format="boolean" />
+        <attr name="rightIcon" format="reference|color" />
+        <attr name="rightIconToggleOn" format="reference|color" />
+        <attr name="rightIconToggleOff" format="reference|color" />
+
+        <attr name="rightIconType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="toggle" value="1" />
+            <enum name="click" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -3,19 +3,26 @@
     <dimen name="borderRadiusLarge">4dp</dimen>
 
     <dimen name="borderDialog">@dimen/borderRadiusLarge</dimen>
+    <dimen name="borderRadiusDialog">@dimen/borderRadiusLarge</dimen>
     <dimen name="borderMarginHorizontal">15dp</dimen>
     <dimen name="borderPaddingVertical">20dp</dimen>
 
     <!--     Primary Button Dimension       -->
     <dimen name="primaryButtonLargeHeight">52dp</dimen>
     <dimen name="primaryButtonTextSize">12sp</dimen>
-    <dimen name="primaryButtonPaddingVertical">15dp</dimen>
+    <dimen name="primaryButtonPaddingVertical">20dp</dimen>
 
-    <!--    User Text Input       -->
-    <dimen name="userTextInputSize">14sp</dimen>
-    <dimen name="userTextInputMarginHorizontal">20dp</dimen>
-    <dimen name="userTextInputHeight">52dp</dimen>
-    <dimen name="userTextInputPaddingStart">15dp</dimen>
+    <!--    Account Input - Field      -->
+    <dimen name="accountInputFieldTextSize">16sp</dimen>
+    <dimen name="accountInputFieldHeight">52dp</dimen>
+    <dimen name="accountInputFieldMHorizontal">20dp</dimen>
+    <dimen name="accountInputFieldPaddingHorizontal">15dp</dimen>
+    <dimen name="accountInputFieldBorderRadius">4dp</dimen>
+    <dimen name="accountInputFieldStrokeWidth">2dp</dimen>
+
+    <!--    Account Input - Error     -->
+    <dimen name="accountInputErrorTextSize">12sp</dimen>
+    <dimen name="accountInputErrorMarginTop">5dp</dimen>
 
     <!--    Large Header Title      -->
     <dimen name="largeHeaderTextSize">30sp</dimen>

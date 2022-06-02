@@ -7,21 +7,35 @@ import androidx.annotation.LayoutRes
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.customview.customView
 import com.afollestad.materialdialogs.customview.getCustomView
+import com.pgone.employee.R
 
 open class BaseDialog(context: Context?) {
 
-  private var dialog: MaterialDialog? = null
+  protected var dialog: MaterialDialog? = null
   protected var contentView: View? = null
 
   init {
     dialog = MaterialDialog(context!!)
-    dialog?.cornerRadius(4f)
+    dialog?.cornerRadius(res = R.dimen.borderRadiusDialog)
     onCreateDialog()
   }
 
 
   fun setContentView(@LayoutRes layout: Int) {
     dialog?.customView(layout, dialogWrapContent = true, noVerticalPadding = true)
+    this.contentView = dialog?.getCustomView()
+  }
+
+  fun setContentView(
+    @LayoutRes layout: Int,
+    dialogWrapContent: Boolean,
+    noVerticalPadding: Boolean
+  ) {
+    dialog?.customView(
+      layout,
+      dialogWrapContent = dialogWrapContent,
+      noVerticalPadding = noVerticalPadding
+    )
     this.contentView = dialog?.getCustomView()
   }
 
@@ -34,7 +48,7 @@ open class BaseDialog(context: Context?) {
     dialog?.cancelOnTouchOutside(isCancel)
   }
 
-  open fun onCreateDialog() { }
+  open fun onCreateDialog() {}
 
   open fun dismiss() {
     dialog?.dismiss()

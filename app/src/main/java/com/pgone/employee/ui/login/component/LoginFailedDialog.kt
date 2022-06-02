@@ -1,4 +1,4 @@
-package com.pgone.employee.ui.login
+package com.pgone.employee.ui.login.component
 
 import android.content.Context
 import com.pgone.employee.R

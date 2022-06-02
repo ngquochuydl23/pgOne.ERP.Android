@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/drawable_border_4"
+    android:background="@drawable/drawable_acc_input"
     style="@style/DialogStyle">
 
     <TextView

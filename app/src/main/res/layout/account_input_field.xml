@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/editTextWrap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/accountInputFieldHeight"
+        android:padding="@dimen/accountInputFieldStrokeWidth"
+        android:background="@drawable/drawable_acc_input"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/AccountInputField"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rightIconView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/rightIconView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:background="@color/bgAccountField"
+            android:padding="10dp"
+            android:src="@drawable/ic_hide_password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/errorMessageTextView"
+        style="@style/AccountInputFieldError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email sai định dạng"
+        android:visibility="gone" />
+</LinearLayout>

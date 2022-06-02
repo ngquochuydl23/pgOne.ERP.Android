@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">pgOne.ERP</string>
+    <string name="defaultHint">Please enter something</string>
 </resources>
